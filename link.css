@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body
+{
+	background: #0c1022;
+	color: #fff;
+}
+
+.header
+{
+	position: flex;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 10%;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+.logo
+{
+	font-size: 25px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	pointer-events: none;
+	opacity: 0;
+	animation: slideTop 1s ease forwards;
+}
+
+.navbar a
+{
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	margin-left: 35px;
+	opacity: 0;
+	animation: slideTop 1s ease forwards;
+	animation-delay: 0.5s;
+}
+
+.navbar a:hover 
+{
+	background: linear-gradient(45deg, #32005c , #c6005c);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+@keyframes slideTop
+{
+	0%{
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.home 
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+  
+h1
+{
+	text-align: center;
+	font-size: 70px;
+	margin: 0.25cm;
+
+}
+
+.home a
+{
+	position: relative;
+	vertical-align: middle;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	background: linear-gradient(45deg, #32005c , #c6005c, #55408b);
+	border-radius: 200%;
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+	margin: 0.25cm;
+	z-index: 1;
+}
+
+.home a::before
+{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, #32005c , #c6005c, #55408b);
+	border-radius: 200%;
+	z-index: -1;
+	transition: .5s ease;
+}
+
+.home a::before
+{
+	filter: blur(5px);
+}
+
+.home a::after
+{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #0c1022;
+	border-radius: 200%;
+	transform: scale(.88);
+	z-index: -1;
+	transition: .5s ease;
+}
+
+.home a:hover::after
+{
+	transform: scale(0);
+}
+
+
+html 
+{
+	scroll-behavior: smooth;
+}
+
+footer
+{
+	font-weight: 600;
+	width: 100%;
+	padding: 10px;
+	background: yellowgreen;
+	color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}

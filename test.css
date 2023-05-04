@@ -1,0 +1,17 @@
+/* Style the link */
+a {
+	color: blue;
+	text-decoration: none;
+	border-bottom: 1px solid blue;
+}
+
+/* Style the section */
+section {
+	padding: 50px 0;
+}
+
+/* Style the section header */
+h2 {
+	font-size: 24px;
+	margin-top: 0;
+}

@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body
+{
+	background: #0c1022;
+	color: #fff;
+}
+
+.header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 10%;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+.logo
+{
+	font-size: 25px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	pointer-events: none;
+	opacity: 0;
+	animation: slideTop 1s ease forwards;
+}
+
+.navbar a
+{
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	margin-left: 35px;
+	opacity: 0;
+	animation: slideTop 1s ease forwards;
+	animation-delay: 0.5s;
+}
+
+.navbar a:hover 
+{
+	background: linear-gradient(45deg, #32005c , #c6005c);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+#home
+{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 70px 10% 0;
+}
+
+.home-content
+{
+	max-width: 600px;
+	align-items: center;
+
+}
+
+.home-content h1
+{
+	font-size: 40px;
+	font-weight: 800;
+	
+}
+
+.home-content h3
+{
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 70px;
+}
+#home2
+{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 70px 10% 0;
+}
+
+.home-content2
+{
+	max-width: 600px;
+	align-items: center;
+}
+
+.home-content2 h1
+{
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.home-content2 h3
+{
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 70px;
+}
+
+#home3
+{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 70px 10% 0;
+}
+
+.home-content3
+{
+	max-width: 600px;
+	align-items: center;
+}
+
+.home-content3 h1
+{
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.home-content3 h3
+{
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 70px;
+}
+	
+.btn 
+{	position: relative;
+	background-color: yellowgreen;
+    border-radius: 40px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	z-index: 1;
+}
+
+.btn::before
+{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	inset: 0;
+	background: linear-gradient(45deg, #32005c , #c6005c, #55408b);
+	background-size: 200%;
+	background-position: 0 0;
+	z-index: -1;
+	border-radius: 40px;
+	transition: .5s ease;
+	filter: blur(5px);
+	transition: .5s ease;
+}
+
+.btn:hover::before
+{
+	background-position: 100% 0;
+}
+
+.btn::after
+{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	inset: 0;
+	background: linear-gradient(45deg, #32005c , #c6005c, #55408b);
+	background-size: 200%;
+	background-position: 0 0;
+	z-index: -1;
+	border-radius: 40px;
+	transition: .5s ease;
+}
+
+.btn:hover::after
+{
+	background-position: 100% 0;
+}
+
+@keyframes slideTop
+{
+	0%{
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.photo-container {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px; /* set a max width for the container */
+  margin: 0 auto; /* center the container horizontally */
+  display: flex; /* use flexbox to arrange the images */
+  flex-wrap: wrap;
+  margin-left: 10px;
+  justify-content: center;
+  
+}
+
+.photo-container img {
+  display: inline-block;
+  width: 31%;
+  margin: 4px;
+  max-width: 400px; /* set a max width for each image */
+  height: auto; /* maintain aspect ratio */
+  box-sizing: border-box;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.photo-container img:hover
+{
+	transform: scale(1.2);
+}
+
+
+.video-container 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-container video {
+  max-width: 100%;
+  height: 50%;
+  margin: 0.5cm;
+}
+
+video1 {
+  max-width: 100%; /* set max-width of video to fit container */
+  max-height: 100%; /* set max-height of video to fit container */
+}
+video3 {
+  max-width: 100%; /* set max-width of video to fit container */
+  max-height: 100%; /* set max-height of video to fit container */
+}
+video4 {
+  max-width: 100%; /* set max-width of video to fit container */
+  max-height: 100%; /* set max-height of video to fit container */
+}
+video5 {
+  max-width: 100%; /* set max-width of video to fit container */
+  max-height: 100%; /* set max-height of video to fit container */
+}
+.audio-container {
+  position: relative;
+  display: flex;
+  margin-right: 0.5cm;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.audio-container audio
+{
+	display: inline-block;
+	margin-right: 0.5cm;
+	margin-bottom: 0.5cm;
+	max-width: 100%;
+}
+
+.popup {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup p {
+  margin: 0;
+  color: black;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.audio-container:hover .popup {
+  opacity: 1;
+}
+
+
+html 
+{
+	scroll-behavior: smooth;
+}
+
+footer
+{
+	font-weight: 600;
+	width: 100%;
+	padding: 10px;
+	background: yellowgreen;
+	color: white;
+    text-align: center;
+    position: flex;
+    bottom: 0;
+}

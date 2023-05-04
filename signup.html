@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+	content="IE-edge">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+	  </style>
+	<header class="header">
+		<!-- <a href="#" class="logo">Menu</a> -->
+		<div>
+		<a href="index.html"> <img src="logo1.png" width="80" height="80"> </a>
+		</div>
+		<nav class="navbar">
+			<a href="index.html">Biography</a>
+			<a href="resume.html">Resume</a>
+			<a href="timetable.html">Time Table</a>
+			<a href="gallery.html">Galleries</a>
+			<a href="link.html">Links</a>
+			<a href="login.html">Log in</a>	
+		</nav>
+	</header>
+
+	<form method="post" action="">
+		<table>
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" name="firstname"></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" name="lastname"></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td>
+					<input type="radio" name="gender" value="male">Male
+					<input type="radio" name="gender" value="female">Female
+				</td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td>
+					<input type="text" name="address1" placeholder="Address 1"><br>
+					<input type="text" name="address2" placeholder="Address 2"><br>
+					<input type="text" name="city" placeholder="City"><br>
+					<select name="state">
+						<option value="">--Select State--</option>
+						<option value="perlis">Perlis</option>
+						<option value="kedah">Kedah</option>
+						<option value="p.pinang">P. Pinang</option>
+						<option value="p.pinang">Perak</option>
+						<option value="p.pinang">Melaka</option>
+						<option value="p.pinang">Kelantan</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Phone Number:</td>
+				<td><input type="tel" name="phone"></td>
+			</tr>
+			<tr>
+				<td>Email Address:</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Educational Background:</td>
+				<td>
+					<input type="checkbox" name="spm" value="SPM">SPM<br>
+					<input type="checkbox" name="diploma" value="Diploma">Diploma<br>
+					<input type="checkbox" name="degree" value="Degree">Degree<br>
+					<input type="checkbox" name="master" value="Master">Master<br>
+					<input type="checkbox" name="phd" value="PhD">PhD
+				</td>
+			</tr>
+			<tr>
+				<td>User Name:</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td>Re-Enter Password:</td>
+				<td><input type="password" name="password2"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="button" value="Submit" onclick="location.href='index.html';">
+					<input type="reset" value="Clear" onclick="document.getElementById('Form').reset();">
+					<input type="button" value="Cancel" onclick="location.href='index.html';">
+				</td>
+			</tr>
+			</table>
+			</form>
+
+			<div class="signup-link">
+				<p>Already have an account? <a href="login.html">Log in Now!</a></p>
+			</div>
+
+	<section>
+		<footer>
+			<p>Copyright © 2023. All rights Janz reserved.</p>
+		</footer>
+	</section>
+</body>
+</html>

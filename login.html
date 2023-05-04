@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+	content="IE-edge">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+	<header class="header">
+		<!-- <a href="#" class="logo">Menu</a> -->
+		<div>
+		<a href="index.html"> <img src="logo1.png" width="80" height="80"> </a>
+		</div>
+		<nav class="navbar">
+			<a href="index.html">Biography</a>
+			<a href="resume.html">Resume</a>
+			<a href="timetable.html">Time Table</a>
+			<a href="gallery.html">Galleries</a>
+			<a href="link.html">Links</a>
+			<a href="login.html">Log in</a>	
+		</nav>
+	</header>
+	
+	<form class="login-form" action="#" method="post">
+		<table>
+			<tr>
+				<td><label for="id">ID	:</label></td>
+				<td><input type="text" id="id" name="id"></td>
+			</tr>
+			<tr>
+				<td><label for="password">Password	:</label></td>
+				<td><input type="password" id="password" name="password"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a href="#">Forgot Password?</a></td>
+			</tr>
+			<tr>
+				<td>
+					<a href="index.html">
+						<input type="button" value="Submit">
+					</a>
+				</td>
+				<td>
+					<input type="button" value="Clear" onclick="document.getElementById('id').value='';document.getElementById('password').value='';">
+					<a href="index.html">
+						<input type="button" value="Cancel">
+					</a>
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<div class="signup-link">
+		<p>Don't have an account? <a href="signup.html">Sign up Now!</a></p>
+	</div>
+
+
+<section>
+	<footer>
+		<p>Copyright © 2023. All rights Janz reserved.</p>
+	</footer>
+</section>
+	
+</body>
+</html>

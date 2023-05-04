@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body
+{
+	background: #0c1022;
+	color: #fff;
+}
+
+.header
+{
+	position: flex;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 10%;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+.logo
+{
+	font-size: 25px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	pointer-events: none;
+	opacity: 0;
+	animation: slideTop 1s ease forwards;
+}
+
+.navbar a
+{
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	margin-left: 35px;
+	opacity: 0;
+	animation: slideTop 1s ease forwards;
+	animation-delay: 0.5s;
+}
+
+.navbar a:hover 
+{
+	background: linear-gradient(45deg, #32005c , #c6005c);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+@keyframes slideTop
+{
+	0%{
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+table {
+	border-collapse: collapse;
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	color: #0c1022;
+}
+td {
+	padding: 10px;
+	border: 1px solid black;
+}
+h1, h2 {
+	margin: 0;
+	line-height: 1.5;
+}
+
+li
+{
+	margin-left: 20px;
+	line-height: 1.5;
+}
+
+button 
+{	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left: 700px;
+	position: relative;
+	background-color: yellowgreen;
+	border-radius: 40px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-flex;
+	font-size: 16px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+button::before
+{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	inset: 0;
+	background: linear-gradient(45deg, #32005c , #c6005c, #55408b);
+	background-size: 200%;
+	background-position: 0 0;
+	z-index: -1;
+	border-radius: 40px;
+	transition: .5s ease;
+	filter: blur(5px);
+	transition: .5s ease;
+}
+
+button:hover::before
+{
+	background-position: 100% 0;
+}
+
+.btn::after
+{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	inset: 0;
+	background: linear-gradient(45deg, #32005c , #c6005c, #55408b);
+	background-size: 200%;
+	background-position: 0 0;
+	z-index: -1;
+	border-radius: 40px;
+	transition: .5s ease;
+}
+
+button:hover::after
+{
+	background-position: 100% 0;
+}
+
+@media print {
+	.header, footer {
+		display: none;
+	}
+  }
+
+
+footer
+{
+	font-weight: 600;
+	width: 100%;
+	padding: 10px;
+	background: yellowgreen;
+	color: white;
+    text-align: center;
+    position: flex;
+    bottom: 0;
+}
